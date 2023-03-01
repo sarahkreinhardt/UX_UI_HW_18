@@ -1,0 +1,47 @@
+.skillsGrid {
+    display: flex;
+    position:relative;
+    border: 5px solid black;
+    grid-template-columns: 33% 33% 33%;
+  }
+
+ .skills {
+  background-color: #FFFFFF;
+  margin: 10px;
+  padding: 10px
+ }
+ .gridContainer {
+  display: grid;
+  background: color #531516;;
+  margin: 10px;
+  padding: 10px;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto auto;
+ }
+
+.workGrid {
+  display: grid;
+  background-color: #661b1c;
+  width: 700px;
+  margin: 10px;
+  padding: 25px;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "project1 project2"
+  "project3";
+ }
+
+ /*media query*/
+@media screen and (max-width: 600px) {
+  .skillsGrid {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .workGrid {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
